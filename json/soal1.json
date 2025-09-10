@@ -1,19 +1,19 @@
 [
     {
         "question": "Kuping",
-        "answer":"ALAT UNTUK MENDENGAR"
+        "answer":"0"
     },
     {
         "question": "Mata",
-        "answer":"ALAT UNTUK MELIHAT"
+        "answer":"1"
     }, 
     {
         "question": "Mulut",
-        "answer":"ALAT UNTUK BERBICARA"
+        "answer":"2"
     },
     {
         "question": "Hidung",
-        "answer":"ALAT UNTUK MENCIUM"
+        "answer":"3"
     }
    
 ]

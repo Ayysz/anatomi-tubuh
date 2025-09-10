@@ -1,18 +1,18 @@
 [
     {
-        "question": "ALAT UNTUK MENDENGAR",
+        "question": "0",
         "answer":"Kuping"
     },
     {
-        "question": "ALAT UNTUK MELIHAT",
+        "question": "1",
         "answer":"Mata"
     }, 
     {
-        "question": "ALAT UNTUK BERBICARA",
+        "question": "2",
         "answer":"Mulut"
     },
     {
-        "question": "ALAT UNTUK MENCIUM",
+        "question": "3",
         "answer":"Hidung"
     }
    
