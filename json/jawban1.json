@@ -1,19 +1,25 @@
 [
-    {
-        "question": "0",
-        "answer":"Kuping"
-    },
+    
     {
         "question": "1",
         "answer":"Mata"
     }, 
+
+    {
+        "question": "3",
+        "answer":"Hidung"
+    },
+
     {
         "question": "2",
         "answer":"Mulut"
     },
+
     {
-        "question": "3",
-        "answer":"Hidung"
+        "question": "0",
+        "answer":"Kuping"
     }
+    
+    
    
 ]
