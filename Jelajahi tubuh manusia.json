@@ -5969,6 +5969,33 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "silanglevel1",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"HOME\"",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -6619,7 +6646,18 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            }
+          ],
           "animations": [
             {
               "name": "default",
@@ -6875,6 +6913,38 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "NewSprite6",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"HOME\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -7870,6 +7940,38 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "NewSprite7",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"HOME\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -14670,7 +14772,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5468750000000002,
+        "zoomFactor": 0.3797121001947934,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -14702,6 +14804,11 @@
         },
         {
           "name": "selectedName",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "selectedId",
           "type": "string",
           "value": ""
         },
@@ -15207,7 +15314,13 @@
           "name": "jawaban",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "id",
+              "type": "number",
+              "value": 0
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -15486,6 +15599,11 @@
               "name": "tipe",
               "type": "string",
               "value": "0"
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "value": "0"
             }
           ],
           "effects": [],
@@ -15568,6 +15686,11 @@
               "name": "tipe",
               "type": "string",
               "value": ""
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "value": "0"
             }
           ],
           "effects": [],
@@ -15591,10 +15714,10 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 15.5,
+                        "y": 16
                       },
                       "customCollisionMask": [
                         [
@@ -15784,6 +15907,30 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "NewShapePainter",
+          "type": "PrimitiveDrawing::Drawer",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "fillOpacity": 255,
+          "outlineSize": 1,
+          "outlineOpacity": 255,
+          "absoluteCoordinates": false,
+          "clearBetweenFrames": true,
+          "antialiasing": "none",
+          "fillColor": {
+            "r": 255,
+            "g": 255,
+            "b": 255
+          },
+          "outlineColor": {
+            "r": 255,
+            "g": 0,
+            "b": 0
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -15812,6 +15959,9 @@
           },
           {
             "objectName": "garis"
+          },
+          {
+            "objectName": "NewShapePainter"
           },
           {
             "objectName": "tantangan"
@@ -15856,12 +16006,22 @@
             },
             {
               "type": {
-                "value": "ActivateBehavior"
+                "value": "SetNumberVariable"
               },
               "parameters": [
-                "bulet",
-                "Draggable",
-                ""
+                "index",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "indexanswer",
+                "=",
+                "0"
               ]
             }
           ],
@@ -15912,7 +16072,7 @@
                   "parameters": [
                     "",
                     "bulet2",
-                    "soal.X()",
+                    "soal.X()+50",
                     "soal.Y()+150",
                     ""
                   ]
@@ -15986,8 +16146,8 @@
                   "parameters": [
                     "",
                     "bulet2",
-                    "jawaban.X()",
-                    "jawaban.Y()-150",
+                    "jawaban.X()+50",
+                    "jawaban.Y()-100",
                     ""
                   ]
                 },
@@ -15999,7 +16159,7 @@
                     "bulet2",
                     "id",
                     "=",
-                    "answer[indexanswer].id\n"
+                    "answer[indexanswer].id"
                   ]
                 },
                 {
@@ -16066,77 +16226,22 @@
                 "=",
                 "\"jawaban\""
               ]
-            },
-            {
-              "type": {
-                "value": "StringObjectVariable"
-              },
-              "parameters": [
-                "bulet2",
-                "id",
-                "=",
-                "selectedName"
-              ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "EndX",
-                "=",
-                "bulet2.CenterX()"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "EndY",
-                "=",
-                "bulet2.CenterY()"
-              ]
-            },
-            {
-              "type": {
-                "value": "DebuggerTools::ConsoleLog"
-              },
-              "parameters": [
-                "\"end:\"+EndName",
-                "\"info\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PrimitiveDrawing::LineV2"
-              },
-              "parameters": [
-                "garis",
-                "StartX",
-                "StartY",
-                "EndX",
-                "EndY",
-                "10"
-              ]
-            }
-          ],
+          "actions": [],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "StringObjectVariable"
+                    "inverted": true,
+                    "value": "StringVariable"
                   },
                   "parameters": [
-                    "bulet2",
-                    "id",
+                    "selectedId",
                     "!=",
-                    "bulet2.id"
+                    "jawaban.id"
                   ]
                 }
               ],
@@ -16146,6 +16251,66 @@
                     "value": "Quit"
                   },
                   "parameters": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "selectedId",
+                    "=",
+                    "jawaban.id"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "EndX",
+                    "=",
+                    "bulet2.CenterX()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "EndY",
+                    "=",
+                    "bulet2.CenterY()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PrimitiveDrawing::LineV2"
+                  },
+                  "parameters": [
+                    "garis",
+                    "StartX",
+                    "StartY",
+                    "EndX",
+                    "EndY",
+                    "20"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "\"end:\"+EndName",
+                    "\"info\"",
                     ""
                   ]
                 }
@@ -16198,6 +16363,17 @@
                 "bulet2",
                 "id",
                 "=",
+                "selectedId"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "bulet2",
+                "name",
+                "=",
                 "selectedName"
               ]
             },
@@ -16228,6 +16404,32 @@
               "parameters": [
                 "\"select:\"+selectedName",
                 "\"info\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "bulet2",
+                "id",
+                "=",
+                "selectedName"
+              ]
+            },
+            {
+              "type": {
+                "value": "Quit"
+              },
+              "parameters": [
                 ""
               ]
             }
@@ -24741,11 +24943,27 @@
               },
               "parameters": [
                 "",
-                "\"soal1\"",
+                "\"soal2\"",
                 ""
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "back",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": []
         }
       ],
       "layers": [
@@ -26767,6 +26985,16 @@
                 "\"soal2\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "jawaban",
+                "ButtonFSM",
+                ""
+              ]
             }
           ]
         },
@@ -26800,6 +27028,16 @@
                 "\"soal2\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "jawaban",
+                "ButtonFSM",
+                ""
+              ]
             }
           ]
         },
@@ -26831,6 +27069,16 @@
               "parameters": [
                 "",
                 "\"soal2\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "jawaban",
+                "ButtonFSM",
                 ""
               ]
             }
@@ -26896,7 +27144,7 @@
               },
               "parameters": [
                 "",
-                "\"soal2 level2\"",
+                "\"soal3 level3\"",
                 ""
               ]
             }
@@ -26929,7 +27177,7 @@
               },
               "parameters": [
                 "",
-                "\"soal2 level2\"",
+                "\"soal3 level3\"",
                 ""
               ]
             }
@@ -26962,7 +27210,7 @@
               },
               "parameters": [
                 "",
-                "\"soal2 level2\"",
+                "\"soal3 level3\"",
                 ""
               ]
             }
@@ -28939,7 +29187,7 @@
           "isLocked": false,
           "name": "menang",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": [
             {
