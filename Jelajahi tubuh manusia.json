@@ -2180,6 +2180,166 @@
         "name": "NewSprite10",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "BGM 1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "BGM 1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "General Button.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "General Button.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Robot.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Robot.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Pop Up Open.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Pop Up Open.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Play Button.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Play Button.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "General Button2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "General Button2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Back Button.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Back Button.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Button.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Button.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Face Zoom In.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Face Zoom In.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Mata.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Mata.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Hidung.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Hidung.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Pop Up Open2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Pop Up Open2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Mulut.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Mulut.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Button2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Button2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Telinga.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Telinga.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Tantangan.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Tantangan.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2348,6 +2508,11 @@
           "value": 0
         }
       ]
+    },
+    {
+      "name": "bgm",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
@@ -3213,6 +3378,19 @@
                 "\"scene 1\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "1"
+              ]
             }
           ],
           "events": [
@@ -3223,6 +3401,18 @@
               "actions": []
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "BGM"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -3333,7 +3523,7 @@
       "name": "scene 1",
       "r": 209,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
+      "stopSoundsOnStartup": false,
       "title": "",
       "v": 209,
       "uiSettings": {
@@ -3712,6 +3902,19 @@
               "parameters": [
                 "NewSprite3"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Robot.wav",
+                "2",
+                "",
+                "100",
+                ""
+              ]
             }
           ]
         },
@@ -3738,6 +3941,16 @@
                 "",
                 "\"loading\"",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "bgm",
+                "=",
+                "1"
               ]
             }
           ]
@@ -4128,6 +4341,19 @@
                 "\"level\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "BGM 1.wav",
+                "1",
+                "yes",
+                "20",
+                "1"
+              ]
             }
           ]
         }
@@ -4236,7 +4462,7 @@
       "name": "level",
       "r": 209,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
+      "stopSoundsOnStartup": false,
       "title": "",
       "v": 209,
       "uiSettings": {
@@ -5891,6 +6117,11 @@
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
@@ -5912,6 +6143,19 @@
                 "",
                 "\"level3\"",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button2.wav",
+                "2",
+                "",
+                "100",
+                "1"
               ]
             }
           ]
@@ -5940,6 +6184,19 @@
                 "\"level2\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button2.wav",
+                "2",
+                "",
+                "100",
+                "1"
+              ]
             }
           ]
         },
@@ -5967,6 +6224,30 @@
                 "\"game1\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Play Button.wav",
+                "2",
+                "",
+                "100",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "1",
+                "=",
+                "10"
+              ]
             }
           ]
         },
@@ -5987,6 +6268,19 @@
           "actions": [
             {
               "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Back Button.wav",
+                "1",
+                "",
+                "100",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Scene"
               },
               "parameters": [
@@ -5996,6 +6290,17 @@
               ]
             }
           ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -6106,7 +6411,7 @@
       "name": "level2",
       "r": 209,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
+      "stopSoundsOnStartup": false,
       "title": "",
       "v": 209,
       "uiSettings": {
@@ -6877,6 +7182,19 @@
           "actions": [
             {
               "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button2.wav",
+                "2",
+                "",
+                "100",
+                "1"
+              ]
+            },
+            {
+              "type": {
                 "value": "Scene"
               },
               "parameters": [
@@ -6902,6 +7220,19 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button2.wav",
+                "2",
+                "",
+                "100",
+                "1"
+              ]
+            },
             {
               "type": {
                 "value": "Scene"
@@ -6938,13 +7269,59 @@
                 "\"HOME\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Back Button.wav",
+                "2",
+                "",
+                "100",
+                "1"
+              ]
             }
           ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "NewSprite5",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"game2\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "1",
+                "=",
+                "10"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -7051,7 +7428,7 @@
       "name": "level3",
       "r": 209,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
+      "stopSoundsOnStartup": false,
       "title": "",
       "v": 209,
       "uiSettings": {
@@ -7904,6 +8281,19 @@
           "actions": [
             {
               "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button2.wav",
+                "2",
+                "",
+                "100",
+                "1"
+              ]
+            },
+            {
+              "type": {
                 "value": "Scene"
               },
               "parameters": [
@@ -7929,6 +8319,19 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button2.wav",
+                "2",
+                "",
+                "100",
+                "1"
+              ]
+            },
             {
               "type": {
                 "value": "Scene"
@@ -7964,6 +8367,19 @@
                 "",
                 "\"HOME\"",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Back Button.wav",
+                "2",
+                "",
+                "100",
+                "1"
               ]
             }
           ]
@@ -8082,7 +8498,7 @@
       "name": "game1",
       "r": 209,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
+      "stopSoundsOnStartup": false,
       "title": "",
       "v": 209,
       "uiSettings": {
@@ -8095,7 +8511,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.46331118245139846,
+        "zoomFactor": 3.2364787264161663,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -8357,7 +8773,7 @@
           "persistentUuid": "a4b8702f-414e-4f7b-bde3-6c6892442725",
           "width": 104,
           "x": 610,
-          "y": 336,
+          "y": 327,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -12968,6 +13384,19 @@
                 "ButtonFSM",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Robot.wav",
+                "3",
+                "",
+                "100",
+                ""
+              ]
             }
           ],
           "events": [
@@ -13034,6 +13463,15 @@
                     "ButtonFSM",
                     "yes"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "3"
+                  ]
                 }
               ]
             }
@@ -13111,6 +13549,19 @@
                 "ButtonFSM",
                 "yes"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button2.wav",
+                "2",
+                "",
+                "100",
+                ""
+              ]
             }
           ]
         },
@@ -13186,6 +13637,19 @@
                 "ButtonFSM",
                 "yes"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button2.wav",
+                "2",
+                "",
+                "100",
+                ""
+              ]
             }
           ]
         },
@@ -13194,7 +13658,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "mata",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13210,9 +13673,28 @@
                     "",
                     "\"mata\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Mata.wav",
+                    "2",
+                    "",
+                    "100",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Wait"
@@ -13236,6 +13718,19 @@
                   },
                   "parameters": [
                     "NewSprite6",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Pop Up Open2.wav",
+                    "2",
+                    "",
+                    "100",
                     ""
                   ]
                 },
@@ -13279,6 +13774,32 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Face Zoom In.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "General Button.wav",
+                    "2",
+                    "",
+                    "80",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Tween::TweenCameraZoom2"
@@ -13443,7 +13964,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "hidung",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13459,9 +13979,28 @@
                     "",
                     "\"hidung\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Hidung.wav",
+                    "2",
+                    "",
+                    "30",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Wait"
@@ -13485,6 +14024,19 @@
                   },
                   "parameters": [
                     "pesnhidung",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Pop Up Open2.wav",
+                    "2",
+                    "",
+                    "100",
                     ""
                   ]
                 },
@@ -13519,9 +14071,41 @@
                     "ButtonFSM",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Face Zoom In.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "General Button.wav",
+                    "2",
+                    "",
+                    "80",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Tween::TweenCameraZoom2"
@@ -13605,7 +14189,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "mulut",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13621,6 +14204,12 @@
                     "",
                     "\"mulut\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -13630,6 +14219,19 @@
                   },
                   "parameters": [
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Pop Up Open2.wav",
+                    "2",
+                    "",
+                    "100",
+                    ""
                   ]
                 },
                 {
@@ -13686,6 +14288,19 @@
                 },
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Mulut.wav",
+                    "2",
+                    "",
+                    "100",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Wait"
                   },
                   "parameters": [
@@ -13718,16 +14333,38 @@
                 },
                 {
                   "type": {
-                    "value": "NumberVariable"
+                    "value": "BuiltinCommonInstructions::Once"
                   },
-                  "parameters": [
-                    "isclick.mulut",
-                    "=",
-                    "0"
-                  ]
+                  "parameters": []
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Face Zoom In.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "General Button.wav",
+                    "2",
+                    "",
+                    "80",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Tween::TweenCameraZoom2"
@@ -13811,7 +14448,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "telinga",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13831,16 +14467,38 @@
                 },
                 {
                   "type": {
-                    "value": "NumberVariable"
+                    "value": "BuiltinCommonInstructions::Once"
                   },
-                  "parameters": [
-                    "isclick.telinga",
-                    "=",
-                    "0"
-                  ]
+                  "parameters": []
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Face Zoom In.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "General Button.wav",
+                    "2",
+                    "",
+                    "80",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Tween::TweenCameraZoom2"
@@ -13927,6 +14585,12 @@
                     "",
                     "\"telinga\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -13936,6 +14600,19 @@
                   },
                   "parameters": [
                     "telinga",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Telinga.wav",
+                    "2",
+                    "",
+                    "80",
                     ""
                   ]
                 },
@@ -14235,6 +14912,19 @@
                 },
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Pop Up Open2.wav",
+                    "2",
+                    "",
+                    "80",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Montre"
                   },
                   "parameters": [
@@ -14305,6 +14995,19 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Tantangan.wav",
+                "2",
+                "",
+                "100",
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "Scene"
@@ -14440,6 +15143,19 @@
           "actions": [
             {
               "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Button2.wav",
+                "2",
+                "",
+                "100",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "SetNumberVariable"
               },
               "parameters": [
@@ -14475,6 +15191,19 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Back Button.wav",
+                "2",
+                "",
+                "80",
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "Scene"
@@ -16593,7 +17322,7 @@
       "name": "game2",
       "r": 209,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
+      "stopSoundsOnStartup": false,
       "title": "",
       "v": 209,
       "uiSettings": {
@@ -22795,19 +23524,22 @@
               "parameters": [
                 "orng5"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Robot.wav",
+                "3",
+                "",
+                "100",
+                ""
+              ]
             }
           ],
           "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -22945,6 +23677,15 @@
                     "ButtonFSM",
                     "yes"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "3"
+                  ]
                 }
               ]
             },
@@ -23011,6 +23752,19 @@
                 "0.1",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button2.wav",
+                "2",
+                "",
+                "100",
+                "1"
+              ]
             }
           ]
         },
@@ -23069,6 +23823,19 @@
                 "\"linear\"",
                 "0.1",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button2.wav",
+                "2",
+                "",
+                "100",
+                "1"
               ]
             }
           ]
@@ -23129,6 +23896,19 @@
                 "0.1",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button2.wav",
+                "2",
+                "",
+                "100",
+                "1"
+              ]
             }
           ]
         },
@@ -23188,6 +23968,19 @@
                 "0.1",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button2.wav",
+                "2",
+                "",
+                "100",
+                "1"
+              ]
             }
           ]
         },
@@ -23246,6 +24039,19 @@
                 "\"linear\"",
                 "0.1",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button2.wav",
+                "2",
+                "",
+                "100",
+                "1"
               ]
             }
           ]
@@ -23513,6 +24319,32 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Face Zoom In.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "General Button.wav",
+                    "2",
+                    "",
+                    "80",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenCameraZoom2"
                   },
                   "parameters": [
@@ -23612,6 +24444,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "usus",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -23745,6 +24578,32 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Face Zoom In.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "General Button.wav",
+                    "2",
+                    "",
+                    "80",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Tween::TweenCameraZoom2"
@@ -23978,6 +24837,32 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Face Zoom In.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "General Button.wav",
+                    "2",
+                    "",
+                    "80",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenCameraZoom2"
                   },
                   "parameters": [
@@ -24097,6 +24982,32 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Face Zoom In.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "General Button.wav",
+                    "2",
+                    "",
+                    "80",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Tween::TweenCameraZoom2"
@@ -24324,6 +25235,32 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Face Zoom In.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "General Button.wav",
+                    "2",
+                    "",
+                    "80",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
                   },
                   "parameters": [
@@ -24430,6 +25367,32 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Face Zoom In.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "General Button.wav",
+                    "2",
+                    "",
+                    "80",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenCameraZoom2"
                   },
                   "parameters": [
@@ -24529,6 +25492,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "lambung",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -24653,6 +25617,32 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Face Zoom In.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "General Button.wav",
+                    "2",
+                    "",
+                    "80",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Tween::TweenCameraZoom2"
@@ -25184,7 +26174,7 @@
       "name": "soal2",
       "r": 209,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
+      "stopSoundsOnStartup": false,
       "title": "",
       "v": 209,
       "uiSettings": {
@@ -27177,7 +28167,7 @@
               },
               "parameters": [
                 "",
-                "\"soal3 level3\"",
+                "\"soal2 level2\"",
                 ""
               ]
             }
@@ -27210,7 +28200,7 @@
               },
               "parameters": [
                 "",
-                "\"soal3 level3\"",
+                "\"soal2 level2\"",
                 ""
               ]
             }
@@ -28119,6 +29109,16 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            },
+            {
               "name": "EllipseMovement",
               "type": "EllipseMovement::EllipseMovement",
               "RadiusX": 0,
@@ -28194,7 +29194,18 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            }
+          ],
           "animations": [
             {
               "name": "default",
@@ -28315,6 +29326,16 @@
           "variables": [],
           "effects": [],
           "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            },
             {
               "name": "EllipseMovement",
               "type": "EllipseMovement::EllipseMovement",
@@ -29103,10 +30124,37 @@
           ]
         },
         {
-          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "robotmrnng",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"soal3 level3\"",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -35949,9 +36997,160 @@
           "type": "Tween::TweenBehavior"
         }
       ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "bgm",
+      "name": "bgm",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {},
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [],
+      "objects": [],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT"
+      },
+      "events": [],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        }
+      ]
     }
   ],
-  "externalEvents": [],
+  "externalEvents": [
+    {
+      "associatedLayout": "bgm",
+      "name": "BGM",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "BGM 1.wav",
+                "1",
+                "yes",
+                "30",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "eventsFunctionsExtensions": [
     {
       "author": "",
