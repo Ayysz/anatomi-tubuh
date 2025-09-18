@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 239,
+    "build": 240,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -2336,6 +2336,150 @@
         "kind": "audio",
         "metadata": "",
         "name": "Tantangan.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Detak Jantung.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Detak Jantung.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Correct Answer.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Correct Answer.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Incorrect Answer.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Incorrect Answer.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Next Level.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Next Level.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "133.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "133.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "aaab.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"aaab.png\",\"extension\":\".png\"}",
+        "name": "aaab.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "aaac.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "aaac.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Drag Start.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Drag Start.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Drag Start2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Drag Start2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Drag End.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Drag End.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "BGM 2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "BGM 2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "BGM3.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "BGM3.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Dokter 2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Dokter 2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Dokter 1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Dokter 1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Dokter 3.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Dokter 3.wav",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
@@ -15193,6 +15337,16 @@
           "actions": [
             {
               "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"level\"",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "PlaySoundCanal"
               },
               "parameters": [
@@ -15201,16 +15355,6 @@
                 "2",
                 "",
                 "80",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"level\"",
                 ""
               ]
             }
@@ -16955,6 +17099,16 @@
                 "=",
                 "\"jawaban\""
               ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "selectedId",
+                "=",
+                "bulet2.id"
+              ]
             }
           ],
           "actions": [],
@@ -16964,13 +17118,12 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": true,
                     "value": "StringVariable"
                   },
                   "parameters": [
                     "selectedId",
                     "!=",
-                    "jawaban.id"
+                    "bulet2.id"
                   ]
                 }
               ],
@@ -16995,7 +17148,7 @@
                   "parameters": [
                     "selectedId",
                     "=",
-                    "jawaban.id"
+                    "bulet2.id"
                   ]
                 }
               ],
@@ -17022,6 +17175,16 @@
                 },
                 {
                   "type": {
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "\"end:\"+EndName",
+                    "\"info\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PrimitiveDrawing::LineV2"
                   },
                   "parameters": [
@@ -17031,16 +17194,6 @@
                     "EndX",
                     "EndY",
                     "20"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "DebuggerTools::ConsoleLog"
-                  },
-                  "parameters": [
-                    "\"end:\"+EndName",
-                    "\"info\"",
-                    ""
                   ]
                 }
               ]
@@ -17417,22 +17570,6 @@
           "x": 26,
           "y": 303,
           "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 75,
-          "layer": "back",
-          "name": "NewSprite4",
-          "persistentUuid": "a2627942-1002-4ce1-a80e-b0c848a8cc56",
-          "width": 82,
-          "x": 23,
-          "y": 22,
-          "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -17932,6 +18069,22 @@
           "x": 918,
           "y": 606,
           "zOrder": 54,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 75,
+          "layer": "",
+          "name": "back",
+          "persistentUuid": "fdf0ead5-d7ee-4b4a-9139-96e28bad56be",
+          "width": 82,
+          "x": 17,
+          "y": 23,
+          "zOrder": 55,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -24192,7 +24345,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "hati",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -24208,9 +24360,28 @@
                     "otk",
                     "\"hati\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Dokter 1.wav",
+                    "2",
+                    "",
+                    "100",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
@@ -24444,7 +24615,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "usus",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -24460,9 +24630,28 @@
                     "otk",
                     "\"usus\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Dokter 3.wav",
+                    "2",
+                    "",
+                    "100",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
@@ -24710,7 +24899,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "jantung",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -24726,9 +24914,41 @@
                     "otk",
                     "\"jantung\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Detak Jantung.wav",
+                    "5",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Dokter 2.wav",
+                    "2",
+                    "",
+                    "100",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
@@ -24962,7 +25182,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "otak",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -25112,9 +25331,28 @@
                     "otk",
                     "\"otak\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Dokter 2.wav",
+                    "2",
+                    "",
+                    "100",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
@@ -25214,7 +25452,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "paru-paru",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -25230,6 +25467,12 @@
                     "otk",
                     "\"paru\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -25239,23 +25482,10 @@
                   },
                   "parameters": [
                     "",
-                    "Face Zoom In.wav",
+                    "Dokter 2.wav",
                     "2",
                     "",
                     "100",
-                    "0.03"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PlaySoundCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "General Button.wav",
-                    "2",
-                    "",
-                    "80",
                     ""
                   ]
                 },
@@ -25492,7 +25722,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "lambung",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -25508,9 +25737,28 @@
                     "otk",
                     "\"lambung\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Dokter 2.wav",
+                    "2",
+                    "",
+                    "100",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
@@ -25936,6 +26184,19 @@
                 "\"soal2\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Tantangan.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
             }
           ]
         },
@@ -25953,7 +26214,42 @@
               ]
             }
           ],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"level2\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Back Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "1",
+                "=",
+                "30"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -27768,6 +28064,19 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Button.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Wait"
                   },
                   "parameters": [
@@ -27841,6 +28150,19 @@
                     "ButtonFSM",
                     "yes"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Correct Answer.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
                 }
               ]
             }
@@ -27885,6 +28207,19 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Button.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
+                },
                 {
                   "type": {
                     "value": "Wait"
@@ -27940,6 +28275,19 @@
                     "ButtonFSM",
                     "yes"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Incorrect Answer.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
                 }
               ]
             }
@@ -27966,6 +28314,19 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
+            },
             {
               "type": {
                 "value": "Scene"
@@ -28011,6 +28372,19 @@
           "actions": [
             {
               "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
+            },
+            {
+              "type": {
                 "value": "Scene"
               },
               "parameters": [
@@ -28052,6 +28426,19 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
+            },
             {
               "type": {
                 "value": "Scene"
@@ -28097,6 +28484,19 @@
           "actions": [
             {
               "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
+            },
+            {
+              "type": {
                 "value": "Scene"
               },
               "parameters": [
@@ -28130,11 +28530,24 @@
           "actions": [
             {
               "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
+            },
+            {
+              "type": {
                 "value": "Scene"
               },
               "parameters": [
                 "",
-                "\"soal3 level3\"",
+                "\"soal2 level2\"",
                 ""
               ]
             }
@@ -28161,6 +28574,19 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
+            },
             {
               "type": {
                 "value": "Scene"
@@ -28194,6 +28620,19 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
+            },
             {
               "type": {
                 "value": "Scene"
@@ -29930,6 +30369,19 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "General Button.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Wait"
                   },
                   "parameters": [
@@ -29943,6 +30395,19 @@
                   "parameters": [
                     "",
                     "\"menang\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Correct Answer.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
                   ]
                 },
                 {
@@ -30009,6 +30474,19 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Button.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Wait"
                   },
                   "parameters": [
@@ -30022,6 +30500,19 @@
                   "parameters": [
                     "",
                     "\"kalah\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Incorrect Answer.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
                   ]
                 },
                 {
@@ -30087,6 +30578,19 @@
                 "\"soal2 level2\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
             }
           ]
         },
@@ -30120,6 +30624,19 @@
                 "\"soal2 level2\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
             }
           ]
         },
@@ -30152,6 +30669,111 @@
                 "",
                 "\"soal3 level3\"",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "NewSprite5",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"soal3 level3\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "NewSprite3",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"soal3 level3\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
               ]
             }
           ]
@@ -32766,6 +33388,19 @@
           "actions": [
             {
               "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
+            },
+            {
+              "type": {
                 "value": "Delete"
               },
               "parameters": [
@@ -32992,6 +33627,19 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Button.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Wait"
                   },
                   "parameters": [
@@ -33075,6 +33723,19 @@
                     "ButtonFSM",
                     "yes"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Correct Answer.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
                 }
               ]
             }
@@ -33131,6 +33792,19 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Button.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Wait"
                   },
                   "parameters": [
@@ -33184,6 +33858,19 @@
                     "ButtonFSM",
                     "yes"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Incorrect Answer.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
                 }
               ]
             }
@@ -33210,6 +33897,19 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
+            },
             {
               "type": {
                 "value": "Scene"
@@ -33255,6 +33955,19 @@
           "actions": [
             {
               "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
+            },
+            {
+              "type": {
                 "value": "Scene"
               },
               "parameters": [
@@ -33296,6 +34009,19 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
+            },
             {
               "type": {
                 "value": "Scene"
@@ -33341,6 +34067,19 @@
           "actions": [
             {
               "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
+            },
+            {
+              "type": {
                 "value": "SetNumberVariable"
               },
               "parameters": [
@@ -33382,6 +34121,19 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
+            },
             {
               "type": {
                 "value": "SetNumberVariable"
@@ -33427,6 +34179,19 @@
           "actions": [
             {
               "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
+            },
+            {
+              "type": {
                 "value": "SetNumberVariable"
               },
               "parameters": [
@@ -33468,6 +34233,19 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
+            },
             {
               "type": {
                 "value": "SetNumberVariable"
@@ -33550,6 +34328,19 @@
                 "ButtonFSM",
                 "yes"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Next Level.mp3",
+                "2",
+                "",
+                "100",
+                "0.03"
+              ]
             }
           ]
         },
@@ -33576,6 +34367,19 @@
                 "",
                 "\"level2\"",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Back Button.wav",
+                "2",
+                "",
+                "100",
+                "0.03"
               ]
             }
           ]
@@ -33951,6 +34755,11 @@
           "name": "is_cancel",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "balik",
+          "type": "number",
+          "value": 0
         }
       ],
       "instances": [
@@ -34275,6 +35084,86 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "menang akhir",
+          "name": "pesanmenngakhir",
+          "persistentUuid": "75b7f8f3-0af7-4382-869f-77759a1c0a1d",
+          "width": 0,
+          "x": 0,
+          "y": 415,
+          "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "menang akhir",
+          "name": "robotmenang",
+          "persistentUuid": "44577f29-b3c0-422f-a776-37684468b404",
+          "width": 0,
+          "x": 10,
+          "y": 299,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 720,
+          "layer": "menang akhir",
+          "name": "efek",
+          "persistentUuid": "e6763b80-2b01-4038-b732-e53f83cdbe03",
+          "width": 871,
+          "x": 207,
+          "y": 180,
+          "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "menang akhir",
+          "name": "NewSprite",
+          "persistentUuid": "45781b7e-d4c9-4c87-b931-0771d0241946",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "menang akhir",
+          "name": "next",
+          "persistentUuid": "7b209ef7-5496-4b0e-aa18-4077d2983917",
+          "width": 0,
+          "x": 1070,
+          "y": 553,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -34407,7 +35296,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "aa.png",
+                      "image": "aaab.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -34455,7 +35344,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "bb.png",
+                      "image": "aaac.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -34787,6 +35676,16 @@
               "name": "id",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "startx",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "starty",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -34888,11 +35787,11 @@
                             "y": 0
                           },
                           {
-                            "x": 136,
+                            "x": 94,
                             "y": 0
                           },
                           {
-                            "x": 136,
+                            "x": 96.5,
                             "y": 109
                           },
                           {
@@ -34988,12 +35887,12 @@
                             "y": 0
                           },
                           {
-                            "x": 191,
-                            "y": 189
+                            "x": 192,
+                            "y": 116
                           },
                           {
                             "x": 0,
-                            "y": 189
+                            "y": 120.5
                           }
                         ]
                       ]
@@ -35370,7 +36269,13 @@
           "name": "robotmenang",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "id",
+              "type": "number",
+              "value": 0
+            }
+          ],
           "effects": [],
           "behaviors": [
             {
@@ -35457,7 +36362,13 @@
           "name": "efek",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "id",
+              "type": "number",
+              "value": 0
+            }
+          ],
           "effects": [],
           "behaviors": [
             {
@@ -35767,6 +36678,328 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "pesanmenngakhir",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "133.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 304
+                          },
+                          {
+                            "x": 0,
+                            "y": 304
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "next",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            }
+          ],
+          "animations": [
+            {
+              "name": "default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.14,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "w1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 177,
+                            "y": 0
+                          },
+                          {
+                            "x": 177,
+                            "y": 142
+                          },
+                          {
+                            "x": 0,
+                            "y": 142
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "w2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 177,
+                            "y": 0
+                          },
+                          {
+                            "x": 177,
+                            "y": 142
+                          },
+                          {
+                            "x": 0,
+                            "y": 142
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "w3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 177,
+                            "y": 0
+                          },
+                          {
+                            "x": 177,
+                            "y": 142
+                          },
+                          {
+                            "x": 0,
+                            "y": 142
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "w4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 177,
+                            "y": 0
+                          },
+                          {
+                            "x": 177,
+                            "y": 142
+                          },
+                          {
+                            "x": 0,
+                            "y": 142
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "w5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 177,
+                            "y": 0
+                          },
+                          {
+                            "x": 177,
+                            "y": 142
+                          },
+                          {
+                            "x": 0,
+                            "y": 142
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "w6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 177,
+                            "y": 0
+                          },
+                          {
+                            "x": 177,
+                            "y": 142
+                          },
+                          {
+                            "x": 0,
+                            "y": 142
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -35797,6 +37030,9 @@
             "objectName": "pesankedua"
           },
           {
+            "objectName": "pesanmenngakhir"
+          },
+          {
             "objectName": "pesamenang"
           },
           {
@@ -35813,6 +37049,9 @@
           },
           {
             "objectName": "NewSprite4"
+          },
+          {
+            "objectName": "next"
           }
         ]
       },
@@ -35875,6 +37114,37 @@
                 "pesankedua",
                 "ButtonFSM",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "next",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "next"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Robot.wav",
+                "3",
+                "",
+                "100",
+                "1"
               ]
             }
           ]
@@ -36010,6 +37280,19 @@
           "actions": [
             {
               "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button2.wav",
+                "2",
+                "",
+                "100",
+                "1"
+              ]
+            },
+            {
+              "type": {
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
               },
               "parameters": [
@@ -36050,6 +37333,28 @@
                 "ButtonFSM",
                 "yes"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Robot.wav",
+                "2",
+                "",
+                "100",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "StopSoundCanal"
+              },
+              "parameters": [
+                "",
+                "3"
+              ]
             }
           ]
         },
@@ -36068,6 +37373,19 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button2.wav",
+                "2",
+                "",
+                "100",
+                "1"
+              ]
+            },
             {
               "type": {
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
@@ -36119,6 +37437,28 @@
                 "pesanawal",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Robot.wav",
+                "2",
+                "",
+                "100",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "StopSoundCanal"
+              },
+              "parameters": [
+                "",
+                "3"
+              ]
             }
           ]
         },
@@ -36137,6 +37477,19 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button2.wav",
+                "2",
+                "",
+                "100",
+                "1"
+              ]
+            },
             {
               "type": {
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
@@ -36182,11 +37535,43 @@
             },
             {
               "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "pesanawal",
+                "ButtonFSM",
+                "no"
+              ]
+            },
+            {
+              "type": {
                 "value": "Delete"
               },
               "parameters": [
                 "NewSprite4",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Robot.wav",
+                "2",
+                "",
+                "100",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "StopSoundCanal"
+              },
+              "parameters": [
+                "",
+                "3"
               ]
             }
           ]
@@ -36216,6 +37601,19 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "General Button2.wav",
+                "2",
+                "",
+                "100",
+                "1"
+              ]
+            },
             {
               "type": {
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
@@ -36274,7 +37672,7 @@
                 "value": "ButtonStates::ButtonFSM::IsClicked"
               },
               "parameters": [
-                "NewSprite5",
+                "pesanmenngakhir",
                 "ButtonFSM",
                 ""
               ]
@@ -36334,9 +37732,82 @@
                 "value": "ActivateBehavior"
               },
               "parameters": [
-                "NewSprite5",
+                "pesanmenngakhir",
                 "ButtonFSM",
                 "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CancellableDraggable::CancellableDraggable::DraggingIsCancelled"
+              },
+              "parameters": [
+                "jawaban",
+                "CancellableDraggable",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "DebuggerTools::ConsoleLog"
+              },
+              "parameters": [
+                "\"apaaja\"",
+                "\"info\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DraggableBehavior::Dragged"
+              },
+              "parameters": [
+                "jawaban",
+                "Draggable"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "jawaban",
+                "startx",
+                "=",
+                "jawaban.X()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "jawaban",
+                "starty",
+                "=",
+                "jawaban.Y()"
               ]
             }
           ]
@@ -36356,6 +37827,338 @@
           ],
           "actions": [],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "jawaban",
+                    "tempat",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "tempat",
+                    "id",
+                    "=",
+                    "jawaban.id"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "tempat",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "spawn",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Variable",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "tubuh",
+                    "Animation",
+                    "=",
+                    "ToString(Variable+1)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "jawaban",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"kalah\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"menang\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "jawaban",
+                    "CancellableDraggable",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Drag End.wav",
+                    "2",
+                    "",
+                    "100",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Correct Answer.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"menang\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "jawaban",
+                    "CancellableDraggable",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "jawaban",
+                    "tempat",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "tempat",
+                    "id",
+                    "!=",
+                    "jawaban.id"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "jawaban",
+                    "starty",
+                    "=",
+                    "jawaban.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "jawaban",
+                    "startx",
+                    "=",
+                    "jawaban.X()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "balik",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CancellableDraggable::CancellableDraggable::CancelLastDraggingS"
+                  },
+                  "parameters": [
+                    "jawaban",
+                    "CancellableDraggable",
+                    "0.2",
+                    "\"linear\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"menang\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Incorrect Answer.wav",
+                    "2",
+                    "",
+                    "100",
+                    "0.03"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"kalah\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "jawaban",
+                    "CancellableDraggable",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "balik",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"kalah\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "jawaban",
+                    "CancellableDraggable",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.2"
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -36382,12 +38185,12 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetBooleanVariable"
+                    "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "is_cancel",
-                    "Toggle",
-                    ""
+                    "balik",
+                    "=",
+                    "1"
                   ]
                 },
                 {
@@ -36401,261 +38204,85 @@
                     "\"linear\"",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "jawaban",
+                    "startx",
+                    "=",
+                    "jawaban.X()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "jawaban",
+                    "starty",
+                    "=",
+                    "jawaban.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "balik",
+                    "=",
+                    "0"
+                  ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DraggableBehavior::Dropped"
+              },
+              "parameters": [
+                "jawaban",
+                "Draggable"
               ]
             },
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "jawaban",
-                    "tempat",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PickNearest"
-                  },
-                  "parameters": [
-                    "jawaban",
-                    "tempat.X()",
-                    "tempat.Y()",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "NumberObjectVariable"
-                      },
-                      "parameters": [
-                        "tempat",
-                        "id",
-                        "!=",
-                        "jawaban.id"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "CancellableDraggable::CancellableDraggable::CancelLastDraggingS"
-                      },
-                      "parameters": [
-                        "jawaban",
-                        "CancellableDraggable",
-                        "0.2",
-                        "\"linear\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "HideLayer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"menang\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ShowLayer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"kalah\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "jawaban",
-                        "CancellableDraggable",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "HideLayer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"kalah\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "jawaban",
-                        "CancellableDraggable",
-                        "yes"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "NumberObjectVariable"
-                      },
-                      "parameters": [
-                        "tempat",
-                        "id",
-                        "=",
-                        "jawaban.id"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BooleanVariable"
-                      },
-                      "parameters": [
-                        "is_cancel",
-                        "False",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "tempat",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "spawn",
-                        "=",
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "Variable",
-                        "+",
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "tubuh",
-                        "Animation",
-                        "=",
-                        "ToString(Variable+1)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "jawaban",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "HideLayer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"kalah\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ShowLayer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"menang\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "jawaban",
-                        "CancellableDraggable",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "HideLayer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"menang\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "jawaban",
-                        "CancellableDraggable",
-                        "yes"
-                      ]
-                    }
-                  ]
-                }
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "jawaban",
+                "tempat",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "balik",
+                "=",
+                "0"
               ]
             }
           ]
@@ -36674,7 +38301,111 @@
               ]
             }
           ],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"menang akhir\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"menang\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"back\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "next",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "next",
+                "ButtonFSM",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "next",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"level3\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Button.wav",
+                "2",
+                "",
+                "100",
+                "1"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -36861,7 +38592,7 @@
           "isLocked": false,
           "name": "menang akhir",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": [
             {
@@ -37139,7 +38870,7 @@
               },
               "parameters": [
                 "",
-                "BGM 1.wav",
+                "BGM3.wav",
                 "1",
                 "yes",
                 "30",
@@ -38287,12 +40018,27 @@
               "value": "Idle",
               "type": "Choice",
               "label": "State",
-              "extraInformation": [
-                "Idle",
-                "Hovered",
-                "PressedInside",
-                "PressedOutside",
-                "Validated"
+              "choices": [
+                {
+                  "label": "Idle",
+                  "value": "Idle"
+                },
+                {
+                  "label": "Hovered",
+                  "value": "Hovered"
+                },
+                {
+                  "label": "PressedInside",
+                  "value": "PressedInside"
+                },
+                {
+                  "label": "PressedOutside",
+                  "value": "PressedOutside"
+                },
+                {
+                  "label": "Validated",
+                  "value": "Validated"
+                }
               ],
               "hidden": true,
               "name": "State"
@@ -38831,6 +40577,7 @@
               "extraInformation": [
                 "ButtonStates::ButtonFSM"
               ],
+              "choices": [],
               "name": "ButtonFSM"
             },
             {
@@ -38840,6 +40587,7 @@
               "extraInformation": [
                 "EffectCapability::EffectBehavior"
               ],
+              "choices": [],
               "name": "Effect"
             },
             {
@@ -39279,6 +41027,7 @@
               "extraInformation": [
                 "AnimatableCapability::AnimatableBehavior"
               ],
+              "choices": [],
               "name": "Animation"
             },
             {
@@ -39288,6 +41037,7 @@
               "extraInformation": [
                 "ButtonStates::ButtonFSM"
               ],
+              "choices": [],
               "name": "ButtonFSM"
             },
             {
@@ -40681,6 +42431,7 @@
               "extraInformation": [
                 "ButtonStates::ButtonFSM"
               ],
+              "choices": [],
               "name": "ButtonFSM"
             },
             {
@@ -40690,6 +42441,7 @@
               "extraInformation": [
                 "EffectCapability::EffectBehavior"
               ],
+              "choices": [],
               "name": "Effect"
             },
             {
@@ -40734,40 +42486,139 @@
               "type": "Choice",
               "label": "Fade-in easing",
               "group": "Speed",
-              "extraInformation": [
-                "linear",
-                "easeInQuad",
-                "easeOutQuad",
-                "easeInOutQuad",
-                "easeInCubic",
-                "easeOutCubic",
-                "easeInOutCubic",
-                "easeInQuart",
-                "easeOutQuart",
-                "easeInOutQuart",
-                "easeInQuint",
-                "easeOutQuint",
-                "easeInOutQuint",
-                "easeInOutSine",
-                "easeInExpo",
-                "easeOutExpo",
-                "easeInOutExpo",
-                "easeInCirc",
-                "easeOutCirc",
-                "easeInOutCirc",
-                "easeOutBounce",
-                "easeInBack",
-                "easeOutBack",
-                "easeInOutBack",
-                "elastic",
-                "swingFromTo",
-                "swingFrom",
-                "swingTo",
-                "bounce",
-                "bouncePast",
-                "easeFromTo",
-                "easeFrom",
-                "easeTo"
+              "choices": [
+                {
+                  "label": "linear",
+                  "value": "linear"
+                },
+                {
+                  "label": "easeInQuad",
+                  "value": "easeInQuad"
+                },
+                {
+                  "label": "easeOutQuad",
+                  "value": "easeOutQuad"
+                },
+                {
+                  "label": "easeInOutQuad",
+                  "value": "easeInOutQuad"
+                },
+                {
+                  "label": "easeInCubic",
+                  "value": "easeInCubic"
+                },
+                {
+                  "label": "easeOutCubic",
+                  "value": "easeOutCubic"
+                },
+                {
+                  "label": "easeInOutCubic",
+                  "value": "easeInOutCubic"
+                },
+                {
+                  "label": "easeInQuart",
+                  "value": "easeInQuart"
+                },
+                {
+                  "label": "easeOutQuart",
+                  "value": "easeOutQuart"
+                },
+                {
+                  "label": "easeInOutQuart",
+                  "value": "easeInOutQuart"
+                },
+                {
+                  "label": "easeInQuint",
+                  "value": "easeInQuint"
+                },
+                {
+                  "label": "easeOutQuint",
+                  "value": "easeOutQuint"
+                },
+                {
+                  "label": "easeInOutQuint",
+                  "value": "easeInOutQuint"
+                },
+                {
+                  "label": "easeInOutSine",
+                  "value": "easeInOutSine"
+                },
+                {
+                  "label": "easeInExpo",
+                  "value": "easeInExpo"
+                },
+                {
+                  "label": "easeOutExpo",
+                  "value": "easeOutExpo"
+                },
+                {
+                  "label": "easeInOutExpo",
+                  "value": "easeInOutExpo"
+                },
+                {
+                  "label": "easeInCirc",
+                  "value": "easeInCirc"
+                },
+                {
+                  "label": "easeOutCirc",
+                  "value": "easeOutCirc"
+                },
+                {
+                  "label": "easeInOutCirc",
+                  "value": "easeInOutCirc"
+                },
+                {
+                  "label": "easeOutBounce",
+                  "value": "easeOutBounce"
+                },
+                {
+                  "label": "easeInBack",
+                  "value": "easeInBack"
+                },
+                {
+                  "label": "easeOutBack",
+                  "value": "easeOutBack"
+                },
+                {
+                  "label": "easeInOutBack",
+                  "value": "easeInOutBack"
+                },
+                {
+                  "label": "elastic",
+                  "value": "elastic"
+                },
+                {
+                  "label": "swingFromTo",
+                  "value": "swingFromTo"
+                },
+                {
+                  "label": "swingFrom",
+                  "value": "swingFrom"
+                },
+                {
+                  "label": "swingTo",
+                  "value": "swingTo"
+                },
+                {
+                  "label": "bounce",
+                  "value": "bounce"
+                },
+                {
+                  "label": "bouncePast",
+                  "value": "bouncePast"
+                },
+                {
+                  "label": "easeFromTo",
+                  "value": "easeFromTo"
+                },
+                {
+                  "label": "easeFrom",
+                  "value": "easeFrom"
+                },
+                {
+                  "label": "easeTo",
+                  "value": "easeTo"
+                }
               ],
               "name": "FadeInEasing"
             },
@@ -40776,40 +42627,139 @@
               "type": "Choice",
               "label": "Fade-out easing",
               "group": "Speed",
-              "extraInformation": [
-                "linear",
-                "easeInQuad",
-                "easeOutQuad",
-                "easeInOutQuad",
-                "easeInCubic",
-                "easeOutCubic",
-                "easeInOutCubic",
-                "easeInQuart",
-                "easeOutQuart",
-                "easeInOutQuart",
-                "easeInQuint",
-                "easeOutQuint",
-                "easeInOutQuint",
-                "easeInOutSine",
-                "easeInExpo",
-                "easeOutExpo",
-                "easeInOutExpo",
-                "easeInCirc",
-                "easeOutCirc",
-                "easeInOutCirc",
-                "easeOutBounce",
-                "easeInBack",
-                "easeOutBack",
-                "easeInOutBack",
-                "elastic",
-                "swingFromTo",
-                "swingFrom",
-                "swingTo",
-                "bounce",
-                "bouncePast",
-                "easeFromTo",
-                "easeFrom",
-                "easeTo"
+              "choices": [
+                {
+                  "label": "linear",
+                  "value": "linear"
+                },
+                {
+                  "label": "easeInQuad",
+                  "value": "easeInQuad"
+                },
+                {
+                  "label": "easeOutQuad",
+                  "value": "easeOutQuad"
+                },
+                {
+                  "label": "easeInOutQuad",
+                  "value": "easeInOutQuad"
+                },
+                {
+                  "label": "easeInCubic",
+                  "value": "easeInCubic"
+                },
+                {
+                  "label": "easeOutCubic",
+                  "value": "easeOutCubic"
+                },
+                {
+                  "label": "easeInOutCubic",
+                  "value": "easeInOutCubic"
+                },
+                {
+                  "label": "easeInQuart",
+                  "value": "easeInQuart"
+                },
+                {
+                  "label": "easeOutQuart",
+                  "value": "easeOutQuart"
+                },
+                {
+                  "label": "easeInOutQuart",
+                  "value": "easeInOutQuart"
+                },
+                {
+                  "label": "easeInQuint",
+                  "value": "easeInQuint"
+                },
+                {
+                  "label": "easeOutQuint",
+                  "value": "easeOutQuint"
+                },
+                {
+                  "label": "easeInOutQuint",
+                  "value": "easeInOutQuint"
+                },
+                {
+                  "label": "easeInOutSine",
+                  "value": "easeInOutSine"
+                },
+                {
+                  "label": "easeInExpo",
+                  "value": "easeInExpo"
+                },
+                {
+                  "label": "easeOutExpo",
+                  "value": "easeOutExpo"
+                },
+                {
+                  "label": "easeInOutExpo",
+                  "value": "easeInOutExpo"
+                },
+                {
+                  "label": "easeInCirc",
+                  "value": "easeInCirc"
+                },
+                {
+                  "label": "easeOutCirc",
+                  "value": "easeOutCirc"
+                },
+                {
+                  "label": "easeInOutCirc",
+                  "value": "easeInOutCirc"
+                },
+                {
+                  "label": "easeOutBounce",
+                  "value": "easeOutBounce"
+                },
+                {
+                  "label": "easeInBack",
+                  "value": "easeInBack"
+                },
+                {
+                  "label": "easeOutBack",
+                  "value": "easeOutBack"
+                },
+                {
+                  "label": "easeInOutBack",
+                  "value": "easeInOutBack"
+                },
+                {
+                  "label": "elastic",
+                  "value": "elastic"
+                },
+                {
+                  "label": "swingFromTo",
+                  "value": "swingFromTo"
+                },
+                {
+                  "label": "swingFrom",
+                  "value": "swingFrom"
+                },
+                {
+                  "label": "swingTo",
+                  "value": "swingTo"
+                },
+                {
+                  "label": "bounce",
+                  "value": "bounce"
+                },
+                {
+                  "label": "bouncePast",
+                  "value": "bouncePast"
+                },
+                {
+                  "label": "easeFromTo",
+                  "value": "easeFromTo"
+                },
+                {
+                  "label": "easeFrom",
+                  "value": "easeFrom"
+                },
+                {
+                  "label": "easeTo",
+                  "value": "easeTo"
+                }
               ],
               "name": "FadeOutEasing"
             },
@@ -40833,10 +42783,19 @@
               "value": "Idle",
               "type": "Choice",
               "label": "",
-              "extraInformation": [
-                "Idle",
-                "Focused",
-                "Pressed"
+              "choices": [
+                {
+                  "label": "Idle",
+                  "value": "Idle"
+                },
+                {
+                  "label": "Focused",
+                  "value": "Focused"
+                },
+                {
+                  "label": "Pressed",
+                  "value": "Pressed"
+                }
               ],
               "hidden": true,
               "name": "PreviousState"
@@ -40866,10 +42825,19 @@
               "value": "NoTween",
               "type": "Choice",
               "label": "",
-              "extraInformation": [
-                "NoTween",
-                "FadeIn",
-                "FadeOut"
+              "choices": [
+                {
+                  "label": "NoTween",
+                  "value": "NoTween"
+                },
+                {
+                  "label": "FadeIn",
+                  "value": "FadeIn"
+                },
+                {
+                  "label": "FadeOut",
+                  "value": "FadeOut"
+                }
               ],
               "hidden": true,
               "name": "TweenState"
@@ -41824,6 +43792,7 @@
               "extraInformation": [
                 "ScalableCapability::ScalableBehavior"
               ],
+              "choices": [],
               "name": "Scale"
             },
             {
@@ -41833,6 +43802,7 @@
               "extraInformation": [
                 "ButtonStates::ButtonFSM"
               ],
+              "choices": [],
               "name": "ButtonFSM"
             },
             {
@@ -41842,6 +43812,7 @@
               "extraInformation": [
                 "Tween::TweenBehavior"
               ],
+              "choices": [],
               "name": "Tween"
             },
             {
@@ -41890,40 +43861,139 @@
               "type": "Choice",
               "label": "Fade-in easing",
               "group": "Speed",
-              "extraInformation": [
-                "linear",
-                "easeInQuad",
-                "easeOutQuad",
-                "easeInOutQuad",
-                "easeInCubic",
-                "easeOutCubic",
-                "easeInOutCubic",
-                "easeInQuart",
-                "easeOutQuart",
-                "easeInOutQuart",
-                "easeInQuint",
-                "easeOutQuint",
-                "easeInOutQuint",
-                "easeInOutSine",
-                "easeInExpo",
-                "easeOutExpo",
-                "easeInOutExpo",
-                "easeInCirc",
-                "easeOutCirc",
-                "easeInOutCirc",
-                "easeOutBounce",
-                "easeInBack",
-                "easeOutBack",
-                "easeInOutBack",
-                "elastic",
-                "swingFromTo",
-                "swingFrom",
-                "swingTo",
-                "bounce",
-                "bouncePast",
-                "easeFromTo",
-                "easeFrom",
-                "easeTo"
+              "choices": [
+                {
+                  "label": "linear",
+                  "value": "linear"
+                },
+                {
+                  "label": "easeInQuad",
+                  "value": "easeInQuad"
+                },
+                {
+                  "label": "easeOutQuad",
+                  "value": "easeOutQuad"
+                },
+                {
+                  "label": "easeInOutQuad",
+                  "value": "easeInOutQuad"
+                },
+                {
+                  "label": "easeInCubic",
+                  "value": "easeInCubic"
+                },
+                {
+                  "label": "easeOutCubic",
+                  "value": "easeOutCubic"
+                },
+                {
+                  "label": "easeInOutCubic",
+                  "value": "easeInOutCubic"
+                },
+                {
+                  "label": "easeInQuart",
+                  "value": "easeInQuart"
+                },
+                {
+                  "label": "easeOutQuart",
+                  "value": "easeOutQuart"
+                },
+                {
+                  "label": "easeInOutQuart",
+                  "value": "easeInOutQuart"
+                },
+                {
+                  "label": "easeInQuint",
+                  "value": "easeInQuint"
+                },
+                {
+                  "label": "easeOutQuint",
+                  "value": "easeOutQuint"
+                },
+                {
+                  "label": "easeInOutQuint",
+                  "value": "easeInOutQuint"
+                },
+                {
+                  "label": "easeInOutSine",
+                  "value": "easeInOutSine"
+                },
+                {
+                  "label": "easeInExpo",
+                  "value": "easeInExpo"
+                },
+                {
+                  "label": "easeOutExpo",
+                  "value": "easeOutExpo"
+                },
+                {
+                  "label": "easeInOutExpo",
+                  "value": "easeInOutExpo"
+                },
+                {
+                  "label": "easeInCirc",
+                  "value": "easeInCirc"
+                },
+                {
+                  "label": "easeOutCirc",
+                  "value": "easeOutCirc"
+                },
+                {
+                  "label": "easeInOutCirc",
+                  "value": "easeInOutCirc"
+                },
+                {
+                  "label": "easeOutBounce",
+                  "value": "easeOutBounce"
+                },
+                {
+                  "label": "easeInBack",
+                  "value": "easeInBack"
+                },
+                {
+                  "label": "easeOutBack",
+                  "value": "easeOutBack"
+                },
+                {
+                  "label": "easeInOutBack",
+                  "value": "easeInOutBack"
+                },
+                {
+                  "label": "elastic",
+                  "value": "elastic"
+                },
+                {
+                  "label": "swingFromTo",
+                  "value": "swingFromTo"
+                },
+                {
+                  "label": "swingFrom",
+                  "value": "swingFrom"
+                },
+                {
+                  "label": "swingTo",
+                  "value": "swingTo"
+                },
+                {
+                  "label": "bounce",
+                  "value": "bounce"
+                },
+                {
+                  "label": "bouncePast",
+                  "value": "bouncePast"
+                },
+                {
+                  "label": "easeFromTo",
+                  "value": "easeFromTo"
+                },
+                {
+                  "label": "easeFrom",
+                  "value": "easeFrom"
+                },
+                {
+                  "label": "easeTo",
+                  "value": "easeTo"
+                }
               ],
               "name": "FadeInEasing"
             },
@@ -41932,40 +44002,139 @@
               "type": "Choice",
               "label": "Fade-out easing",
               "group": "Speed",
-              "extraInformation": [
-                "linear",
-                "easeInQuad",
-                "easeOutQuad",
-                "easeInOutQuad",
-                "easeInCubic",
-                "easeOutCubic",
-                "easeInOutCubic",
-                "easeInQuart",
-                "easeOutQuart",
-                "easeInOutQuart",
-                "easeInQuint",
-                "easeOutQuint",
-                "easeInOutQuint",
-                "easeInOutSine",
-                "easeInExpo",
-                "easeOutExpo",
-                "easeInOutExpo",
-                "easeInCirc",
-                "easeOutCirc",
-                "easeInOutCirc",
-                "easeOutBounce",
-                "easeInBack",
-                "easeOutBack",
-                "easeInOutBack",
-                "elastic",
-                "swingFromTo",
-                "swingFrom",
-                "swingTo",
-                "bounce",
-                "bouncePast",
-                "easeFromTo",
-                "easeFrom",
-                "easeTo"
+              "choices": [
+                {
+                  "label": "linear",
+                  "value": "linear"
+                },
+                {
+                  "label": "easeInQuad",
+                  "value": "easeInQuad"
+                },
+                {
+                  "label": "easeOutQuad",
+                  "value": "easeOutQuad"
+                },
+                {
+                  "label": "easeInOutQuad",
+                  "value": "easeInOutQuad"
+                },
+                {
+                  "label": "easeInCubic",
+                  "value": "easeInCubic"
+                },
+                {
+                  "label": "easeOutCubic",
+                  "value": "easeOutCubic"
+                },
+                {
+                  "label": "easeInOutCubic",
+                  "value": "easeInOutCubic"
+                },
+                {
+                  "label": "easeInQuart",
+                  "value": "easeInQuart"
+                },
+                {
+                  "label": "easeOutQuart",
+                  "value": "easeOutQuart"
+                },
+                {
+                  "label": "easeInOutQuart",
+                  "value": "easeInOutQuart"
+                },
+                {
+                  "label": "easeInQuint",
+                  "value": "easeInQuint"
+                },
+                {
+                  "label": "easeOutQuint",
+                  "value": "easeOutQuint"
+                },
+                {
+                  "label": "easeInOutQuint",
+                  "value": "easeInOutQuint"
+                },
+                {
+                  "label": "easeInOutSine",
+                  "value": "easeInOutSine"
+                },
+                {
+                  "label": "easeInExpo",
+                  "value": "easeInExpo"
+                },
+                {
+                  "label": "easeOutExpo",
+                  "value": "easeOutExpo"
+                },
+                {
+                  "label": "easeInOutExpo",
+                  "value": "easeInOutExpo"
+                },
+                {
+                  "label": "easeInCirc",
+                  "value": "easeInCirc"
+                },
+                {
+                  "label": "easeOutCirc",
+                  "value": "easeOutCirc"
+                },
+                {
+                  "label": "easeInOutCirc",
+                  "value": "easeInOutCirc"
+                },
+                {
+                  "label": "easeOutBounce",
+                  "value": "easeOutBounce"
+                },
+                {
+                  "label": "easeInBack",
+                  "value": "easeInBack"
+                },
+                {
+                  "label": "easeOutBack",
+                  "value": "easeOutBack"
+                },
+                {
+                  "label": "easeInOutBack",
+                  "value": "easeInOutBack"
+                },
+                {
+                  "label": "elastic",
+                  "value": "elastic"
+                },
+                {
+                  "label": "swingFromTo",
+                  "value": "swingFromTo"
+                },
+                {
+                  "label": "swingFrom",
+                  "value": "swingFrom"
+                },
+                {
+                  "label": "swingTo",
+                  "value": "swingTo"
+                },
+                {
+                  "label": "bounce",
+                  "value": "bounce"
+                },
+                {
+                  "label": "bouncePast",
+                  "value": "bouncePast"
+                },
+                {
+                  "label": "easeFromTo",
+                  "value": "easeFromTo"
+                },
+                {
+                  "label": "easeFrom",
+                  "value": "easeFrom"
+                },
+                {
+                  "label": "easeTo",
+                  "value": "easeTo"
+                }
               ],
               "name": "FadeOutEasing"
             },
@@ -41973,10 +44142,19 @@
               "value": "Idle",
               "type": "Choice",
               "label": "",
-              "extraInformation": [
-                "Idle",
-                "Focused",
-                "Pressed"
+              "choices": [
+                {
+                  "label": "Idle",
+                  "value": "Idle"
+                },
+                {
+                  "label": "Focused",
+                  "value": "Focused"
+                },
+                {
+                  "label": "Pressed",
+                  "value": "Pressed"
+                }
               ],
               "hidden": true,
               "name": "PreviousState"
@@ -42938,6 +45116,7 @@
               "extraInformation": [
                 "ButtonStates::ButtonFSM"
               ],
+              "choices": [],
               "name": "ButtonFSM"
             },
             {
@@ -42947,6 +45126,7 @@
               "extraInformation": [
                 "Tween::TweenBehavior"
               ],
+              "choices": [],
               "name": "Tween"
             },
             {
@@ -42992,40 +45172,139 @@
               "type": "Choice",
               "label": "Fade-in easing",
               "group": "Speed",
-              "extraInformation": [
-                "linear",
-                "easeInQuad",
-                "easeOutQuad",
-                "easeInOutQuad",
-                "easeInCubic",
-                "easeOutCubic",
-                "easeInOutCubic",
-                "easeInQuart",
-                "easeOutQuart",
-                "easeInOutQuart",
-                "easeInQuint",
-                "easeOutQuint",
-                "easeInOutQuint",
-                "easeInOutSine",
-                "easeInExpo",
-                "easeOutExpo",
-                "easeInOutExpo",
-                "easeInCirc",
-                "easeOutCirc",
-                "easeInOutCirc",
-                "easeOutBounce",
-                "easeInBack",
-                "easeOutBack",
-                "easeInOutBack",
-                "elastic",
-                "swingFromTo",
-                "swingFrom",
-                "swingTo",
-                "bounce",
-                "bouncePast",
-                "easeFromTo",
-                "easeFrom",
-                "easeTo"
+              "choices": [
+                {
+                  "label": "linear",
+                  "value": "linear"
+                },
+                {
+                  "label": "easeInQuad",
+                  "value": "easeInQuad"
+                },
+                {
+                  "label": "easeOutQuad",
+                  "value": "easeOutQuad"
+                },
+                {
+                  "label": "easeInOutQuad",
+                  "value": "easeInOutQuad"
+                },
+                {
+                  "label": "easeInCubic",
+                  "value": "easeInCubic"
+                },
+                {
+                  "label": "easeOutCubic",
+                  "value": "easeOutCubic"
+                },
+                {
+                  "label": "easeInOutCubic",
+                  "value": "easeInOutCubic"
+                },
+                {
+                  "label": "easeInQuart",
+                  "value": "easeInQuart"
+                },
+                {
+                  "label": "easeOutQuart",
+                  "value": "easeOutQuart"
+                },
+                {
+                  "label": "easeInOutQuart",
+                  "value": "easeInOutQuart"
+                },
+                {
+                  "label": "easeInQuint",
+                  "value": "easeInQuint"
+                },
+                {
+                  "label": "easeOutQuint",
+                  "value": "easeOutQuint"
+                },
+                {
+                  "label": "easeInOutQuint",
+                  "value": "easeInOutQuint"
+                },
+                {
+                  "label": "easeInOutSine",
+                  "value": "easeInOutSine"
+                },
+                {
+                  "label": "easeInExpo",
+                  "value": "easeInExpo"
+                },
+                {
+                  "label": "easeOutExpo",
+                  "value": "easeOutExpo"
+                },
+                {
+                  "label": "easeInOutExpo",
+                  "value": "easeInOutExpo"
+                },
+                {
+                  "label": "easeInCirc",
+                  "value": "easeInCirc"
+                },
+                {
+                  "label": "easeOutCirc",
+                  "value": "easeOutCirc"
+                },
+                {
+                  "label": "easeInOutCirc",
+                  "value": "easeInOutCirc"
+                },
+                {
+                  "label": "easeOutBounce",
+                  "value": "easeOutBounce"
+                },
+                {
+                  "label": "easeInBack",
+                  "value": "easeInBack"
+                },
+                {
+                  "label": "easeOutBack",
+                  "value": "easeOutBack"
+                },
+                {
+                  "label": "easeInOutBack",
+                  "value": "easeInOutBack"
+                },
+                {
+                  "label": "elastic",
+                  "value": "elastic"
+                },
+                {
+                  "label": "swingFromTo",
+                  "value": "swingFromTo"
+                },
+                {
+                  "label": "swingFrom",
+                  "value": "swingFrom"
+                },
+                {
+                  "label": "swingTo",
+                  "value": "swingTo"
+                },
+                {
+                  "label": "bounce",
+                  "value": "bounce"
+                },
+                {
+                  "label": "bouncePast",
+                  "value": "bouncePast"
+                },
+                {
+                  "label": "easeFromTo",
+                  "value": "easeFromTo"
+                },
+                {
+                  "label": "easeFrom",
+                  "value": "easeFrom"
+                },
+                {
+                  "label": "easeTo",
+                  "value": "easeTo"
+                }
               ],
               "name": "FadeInEasing"
             },
@@ -43034,40 +45313,139 @@
               "type": "Choice",
               "label": "Fade-out easing",
               "group": "Speed",
-              "extraInformation": [
-                "linear",
-                "easeInQuad",
-                "easeOutQuad",
-                "easeInOutQuad",
-                "easeInCubic",
-                "easeOutCubic",
-                "easeInOutCubic",
-                "easeInQuart",
-                "easeOutQuart",
-                "easeInOutQuart",
-                "easeInQuint",
-                "easeOutQuint",
-                "easeInOutQuint",
-                "easeInOutSine",
-                "easeInExpo",
-                "easeOutExpo",
-                "easeInOutExpo",
-                "easeInCirc",
-                "easeOutCirc",
-                "easeInOutCirc",
-                "easeOutBounce",
-                "easeInBack",
-                "easeOutBack",
-                "easeInOutBack",
-                "elastic",
-                "swingFromTo",
-                "swingFrom",
-                "swingTo",
-                "bounce",
-                "bouncePast",
-                "easeFromTo",
-                "easeFrom",
-                "easeTo"
+              "choices": [
+                {
+                  "label": "linear",
+                  "value": "linear"
+                },
+                {
+                  "label": "easeInQuad",
+                  "value": "easeInQuad"
+                },
+                {
+                  "label": "easeOutQuad",
+                  "value": "easeOutQuad"
+                },
+                {
+                  "label": "easeInOutQuad",
+                  "value": "easeInOutQuad"
+                },
+                {
+                  "label": "easeInCubic",
+                  "value": "easeInCubic"
+                },
+                {
+                  "label": "easeOutCubic",
+                  "value": "easeOutCubic"
+                },
+                {
+                  "label": "easeInOutCubic",
+                  "value": "easeInOutCubic"
+                },
+                {
+                  "label": "easeInQuart",
+                  "value": "easeInQuart"
+                },
+                {
+                  "label": "easeOutQuart",
+                  "value": "easeOutQuart"
+                },
+                {
+                  "label": "easeInOutQuart",
+                  "value": "easeInOutQuart"
+                },
+                {
+                  "label": "easeInQuint",
+                  "value": "easeInQuint"
+                },
+                {
+                  "label": "easeOutQuint",
+                  "value": "easeOutQuint"
+                },
+                {
+                  "label": "easeInOutQuint",
+                  "value": "easeInOutQuint"
+                },
+                {
+                  "label": "easeInOutSine",
+                  "value": "easeInOutSine"
+                },
+                {
+                  "label": "easeInExpo",
+                  "value": "easeInExpo"
+                },
+                {
+                  "label": "easeOutExpo",
+                  "value": "easeOutExpo"
+                },
+                {
+                  "label": "easeInOutExpo",
+                  "value": "easeInOutExpo"
+                },
+                {
+                  "label": "easeInCirc",
+                  "value": "easeInCirc"
+                },
+                {
+                  "label": "easeOutCirc",
+                  "value": "easeOutCirc"
+                },
+                {
+                  "label": "easeInOutCirc",
+                  "value": "easeInOutCirc"
+                },
+                {
+                  "label": "easeOutBounce",
+                  "value": "easeOutBounce"
+                },
+                {
+                  "label": "easeInBack",
+                  "value": "easeInBack"
+                },
+                {
+                  "label": "easeOutBack",
+                  "value": "easeOutBack"
+                },
+                {
+                  "label": "easeInOutBack",
+                  "value": "easeInOutBack"
+                },
+                {
+                  "label": "elastic",
+                  "value": "elastic"
+                },
+                {
+                  "label": "swingFromTo",
+                  "value": "swingFromTo"
+                },
+                {
+                  "label": "swingFrom",
+                  "value": "swingFrom"
+                },
+                {
+                  "label": "swingTo",
+                  "value": "swingTo"
+                },
+                {
+                  "label": "bounce",
+                  "value": "bounce"
+                },
+                {
+                  "label": "bouncePast",
+                  "value": "bouncePast"
+                },
+                {
+                  "label": "easeFromTo",
+                  "value": "easeFromTo"
+                },
+                {
+                  "label": "easeFrom",
+                  "value": "easeFrom"
+                },
+                {
+                  "label": "easeTo",
+                  "value": "easeTo"
+                }
               ],
               "name": "FadeOutEasing"
             },
@@ -43075,10 +45453,19 @@
               "value": "Idle",
               "type": "Choice",
               "label": "",
-              "extraInformation": [
-                "Idle",
-                "Focused",
-                "Pressed"
+              "choices": [
+                {
+                  "label": "Idle",
+                  "value": "Idle"
+                },
+                {
+                  "label": "Focused",
+                  "value": "Focused"
+                },
+                {
+                  "label": "Pressed",
+                  "value": "Pressed"
+                }
               ],
               "hidden": true,
               "name": "PreviousState"
@@ -43371,42 +45758,147 @@
               "type": "Choice",
               "label": "The cursor type",
               "description": "See https://developer.mozilla.org/en-US/docs/Web/CSS/cursor for a list of possible cursors.",
-              "extraInformation": [
-                "auto",
-                "default",
-                "none",
-                "context-menu",
-                "help",
-                "pointer",
-                "progress",
-                "wait",
-                "cell",
-                "crosshair",
-                "text",
-                "vertical-text",
-                "alias",
-                "copy",
-                "move",
-                "no-drop",
-                "not-allowed",
-                "grab",
-                "grabbing",
-                "all-scroll",
-                "col-resize",
-                "row-resize",
-                "n-resize",
-                "e-resize",
-                "s-resize",
-                "w-resize",
-                "ne-resize",
-                "nw-resize",
-                "se-resize",
-                "sw-resize",
-                "ew-resize",
-                "ns-resize",
-                "nwse-resize",
-                "zoom-in",
-                "zoom-out"
+              "choices": [
+                {
+                  "label": "auto",
+                  "value": "auto"
+                },
+                {
+                  "label": "default",
+                  "value": "default"
+                },
+                {
+                  "label": "none",
+                  "value": "none"
+                },
+                {
+                  "label": "context-menu",
+                  "value": "context-menu"
+                },
+                {
+                  "label": "help",
+                  "value": "help"
+                },
+                {
+                  "label": "pointer",
+                  "value": "pointer"
+                },
+                {
+                  "label": "progress",
+                  "value": "progress"
+                },
+                {
+                  "label": "wait",
+                  "value": "wait"
+                },
+                {
+                  "label": "cell",
+                  "value": "cell"
+                },
+                {
+                  "label": "crosshair",
+                  "value": "crosshair"
+                },
+                {
+                  "label": "text",
+                  "value": "text"
+                },
+                {
+                  "label": "vertical-text",
+                  "value": "vertical-text"
+                },
+                {
+                  "label": "alias",
+                  "value": "alias"
+                },
+                {
+                  "label": "copy",
+                  "value": "copy"
+                },
+                {
+                  "label": "move",
+                  "value": "move"
+                },
+                {
+                  "label": "no-drop",
+                  "value": "no-drop"
+                },
+                {
+                  "label": "not-allowed",
+                  "value": "not-allowed"
+                },
+                {
+                  "label": "grab",
+                  "value": "grab"
+                },
+                {
+                  "label": "grabbing",
+                  "value": "grabbing"
+                },
+                {
+                  "label": "all-scroll",
+                  "value": "all-scroll"
+                },
+                {
+                  "label": "col-resize",
+                  "value": "col-resize"
+                },
+                {
+                  "label": "row-resize",
+                  "value": "row-resize"
+                },
+                {
+                  "label": "n-resize",
+                  "value": "n-resize"
+                },
+                {
+                  "label": "e-resize",
+                  "value": "e-resize"
+                },
+                {
+                  "label": "s-resize",
+                  "value": "s-resize"
+                },
+                {
+                  "label": "w-resize",
+                  "value": "w-resize"
+                },
+                {
+                  "label": "ne-resize",
+                  "value": "ne-resize"
+                },
+                {
+                  "label": "nw-resize",
+                  "value": "nw-resize"
+                },
+                {
+                  "label": "se-resize",
+                  "value": "se-resize"
+                },
+                {
+                  "label": "sw-resize",
+                  "value": "sw-resize"
+                },
+                {
+                  "label": "ew-resize",
+                  "value": "ew-resize"
+                },
+                {
+                  "label": "ns-resize",
+                  "value": "ns-resize"
+                },
+                {
+                  "label": "nwse-resize",
+                  "value": "nwse-resize"
+                },
+                {
+                  "label": "zoom-in",
+                  "value": "zoom-in"
+                },
+                {
+                  "label": "zoom-out",
+                  "value": "zoom-out"
+                }
               ],
               "name": "CursorType"
             }
@@ -46394,6 +48886,7 @@
               "extraInformation": [
                 "DraggableBehavior::Draggable"
               ],
+              "choices": [],
               "name": "DraggableBehavior"
             },
             {
@@ -46403,6 +48896,7 @@
               "extraInformation": [
                 "Tween::TweenBehavior"
               ],
+              "choices": [],
               "name": "TweenBehavior"
             },
             {
