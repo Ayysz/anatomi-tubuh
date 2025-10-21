@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 240,
+    "build": 243,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -12,7 +12,7 @@
     "antialisingEnabledOnMobile": false,
     "folderProject": false,
     "orientation": "landscape",
-    "packageName": "com.example.gamename",
+    "packageName": "com.solu.anatomi_tubuh",
     "pixelsRounding": false,
     "projectUuid": "34c8dda5-149d-44c7-9f32-e7e65ce2662a",
     "scaleMode": "linear",
@@ -70,7 +70,7 @@
       "progressBarMaxWidth": 200,
       "progressBarMinWidth": 40,
       "progressBarWidthPercent": 30,
-      "showGDevelopSplash": true,
+      "showGDevelopSplash": false,
       "showProgressBar": true
     },
     "watermark": {
@@ -2681,7 +2681,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.3437520241612315,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [],
@@ -3681,7 +3682,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.4789341884535245,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [],
@@ -4218,7 +4220,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.546875,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [],
@@ -4620,7 +4623,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.4633111824513976,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [],
@@ -6569,7 +6573,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.546875,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [],
@@ -7586,7 +7591,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.546875,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [],
@@ -8655,8 +8661,9 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 3.2364787264161663,
-        "windowMask": false
+        "zoomFactor": 0.30722437408607645,
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [],
@@ -15646,7 +15653,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.3797121001947934,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [
@@ -15714,6 +15722,16 @@
           "name": "mouse_draw",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "dot_selected",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "bullet_target",
+          "type": "string",
+          "value": "0"
         }
       ],
       "instances": [
@@ -15863,22 +15881,6 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "garis",
-          "persistentUuid": "9cdc152e-a4b3-4c4c-bca2-47e0c4f6490e",
-          "width": 0,
-          "x": 7,
-          "y": 0,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": true,
           "depth": 0,
           "height": 75,
@@ -15905,6 +15907,38 @@
           "x": 458,
           "y": 68,
           "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "garis_gerak",
+          "persistentUuid": "572dd617-33ec-4fed-9039-581e5629d29a",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "garis_buat",
+          "persistentUuid": "92a4a214-d8b7-4923-9650-851b914f8d34",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -16198,7 +16232,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "0",
+              "name": "1",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -16246,7 +16280,7 @@
               ]
             },
             {
-              "name": "1",
+              "name": "2",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -16294,7 +16328,7 @@
               ]
             },
             {
-              "name": "2",
+              "name": "3",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -16342,7 +16376,7 @@
               ]
             },
             {
-              "name": "3",
+              "name": "4",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -16547,8 +16581,8 @@
           "variables": [
             {
               "name": "id",
-              "type": "string",
-              "value": ""
+              "type": "number",
+              "value": 0
             },
             {
               "name": "conec",
@@ -16564,6 +16598,16 @@
               "name": "name",
               "type": "string",
               "value": "0"
+            },
+            {
+              "name": "target",
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "name": "matched",
+              "type": "boolean",
+              "value": false
             }
           ],
           "effects": [],
@@ -16583,11 +16627,11 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 20,
+                        "y": 19.5
                       },
                       "centerPoint": {
-                        "automatic": false,
+                        "automatic": true,
                         "name": "centre",
                         "x": 15.5,
                         "y": 16
@@ -16621,7 +16665,7 @@
         },
         {
           "assetStoreId": "",
-          "name": "garis",
+          "name": "garis_gerak",
           "type": "PrimitiveDrawing::Drawer",
           "variables": [],
           "effects": [],
@@ -16630,7 +16674,7 @@
           "outlineSize": 1,
           "outlineOpacity": 255,
           "absoluteCoordinates": false,
-          "clearBetweenFrames": false,
+          "clearBetweenFrames": true,
           "antialiasing": "medium",
           "fillColor": {
             "r": 255,
@@ -16783,7 +16827,7 @@
         },
         {
           "assetStoreId": "",
-          "name": "NewShapePainter",
+          "name": "garis_buat",
           "type": "PrimitiveDrawing::Drawer",
           "variables": [],
           "effects": [],
@@ -16792,7 +16836,7 @@
           "outlineSize": 1,
           "outlineOpacity": 255,
           "absoluteCoordinates": false,
-          "clearBetweenFrames": true,
+          "clearBetweenFrames": false,
           "antialiasing": "none",
           "fillColor": {
             "r": 255,
@@ -16831,10 +16875,10 @@
             "objectName": "point"
           },
           {
-            "objectName": "garis"
+            "objectName": "garis_gerak"
           },
           {
-            "objectName": "NewShapePainter"
+            "objectName": "garis_buat"
           },
           {
             "objectName": "tantangan"
@@ -16896,6 +16940,26 @@
                 "=",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "ArrayTools::Shuffle"
+              },
+              "parameters": [
+                "",
+                "answer",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ArrayTools::Shuffle"
+              },
+              "parameters": [
+                "",
+                "question",
+                ""
+              ]
             }
           ],
           "events": [
@@ -16952,13 +17016,13 @@
                 },
                 {
                   "type": {
-                    "value": "SetStringObjectVariable"
+                    "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
                     "bulet2",
                     "id",
                     "=",
-                    "question[index].id"
+                    "question[index].answer"
                   ]
                 },
                 {
@@ -16970,6 +17034,17 @@
                     "tipe",
                     "=",
                     "\"soal\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "bulet2",
+                    "target",
+                    "=",
+                    "\"jawaban\""
                   ]
                 },
                 {
@@ -17009,7 +17084,7 @@
                     "jawaban",
                     "Animation",
                     "=",
-                    "answer[indexanswer].question"
+                    "(answer[indexanswer].question)"
                   ]
                 },
                 {
@@ -17026,13 +17101,13 @@
                 },
                 {
                   "type": {
-                    "value": "SetStringObjectVariable"
+                    "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
                     "bulet2",
                     "id",
                     "=",
-                    "answer[indexanswer].id"
+                    "answer[indexanswer].question"
                   ]
                 },
                 {
@@ -17048,6 +17123,17 @@
                 },
                 {
                   "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "bulet2",
+                    "target",
+                    "=",
+                    "\"soal\""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
@@ -17057,164 +17143,38 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
             }
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::ForEach",
-          "object": "bulet2",
-          "conditions": [
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
             {
               "type": {
-                "value": "SourisSurObjet"
+                "value": "SetNumberObjectVariable"
               },
               "parameters": [
                 "bulet2",
-                "",
-                "",
+                "id",
+                "=",
+                "selectedName"
+              ]
+            },
+            {
+              "type": {
+                "value": "Quit"
+              },
+              "parameters": [
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "MouseButtonFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "\"Left\""
-              ]
-            },
-            {
-              "type": {
-                "value": "StringObjectVariable"
-              },
-              "parameters": [
-                "bulet2",
-                "tipe",
-                "=",
-                "\"jawaban\""
-              ]
-            },
-            {
-              "type": {
-                "value": "StringVariable"
-              },
-              "parameters": [
-                "selectedId",
-                "=",
-                "bulet2.id"
-              ]
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "selectedId",
-                    "!=",
-                    "bulet2.id"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Quit"
-                  },
-                  "parameters": [
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "selectedId",
-                    "=",
-                    "bulet2.id"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "EndX",
-                    "=",
-                    "bulet2.CenterX()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "EndY",
-                    "=",
-                    "bulet2.CenterY()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "DebuggerTools::ConsoleLog"
-                  },
-                  "parameters": [
-                    "\"end:\"+EndName",
-                    "\"info\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PrimitiveDrawing::LineV2"
-                  },
-                  "parameters": [
-                    "garis",
-                    "StartX",
-                    "StartY",
-                    "EndX",
-                    "EndY",
-                    "20"
-                  ]
-                }
               ]
             }
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::ForEach",
-          "object": "bulet2",
+          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "bulet2",
-                "",
-                "",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "MouseButtonFromTextPressed"
@@ -17226,37 +17186,62 @@
             },
             {
               "type": {
-                "value": "StringObjectVariable"
+                "value": "SourisSurObjet"
               },
               "parameters": [
                 "bulet2",
-                "tipe",
-                "=",
-                "\"soal\""
+                "",
+                "",
+                ""
               ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "dot_selected",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "bulet2",
+                "matched",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "SetStringObjectVariable"
+                "value": "SetNumberVariable"
               },
               "parameters": [
-                "bulet2",
-                "id",
+                "dot_selected",
                 "=",
-                "selectedId"
+                "bulet2.id"
               ]
             },
             {
               "type": {
-                "value": "SetStringObjectVariable"
+                "value": "SetStringVariable"
               },
               "parameters": [
-                "bulet2",
-                "name",
+                "bullet_target",
                 "=",
-                "selectedName"
+                "bulet2.target"
               ]
             },
             {
@@ -17281,41 +17266,398 @@
             },
             {
               "type": {
-                "value": "DebuggerTools::ConsoleLog"
+                "value": "PlaySoundCanal"
               },
               "parameters": [
-                "\"select:\"+selectedName",
-                "\"info\"",
+                "",
+                "Drag Start.wav",
+                "2",
+                "",
+                "60",
                 ""
               ]
             }
           ]
         },
         {
-          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "dot_selected",
+                ">",
+                "0"
+              ]
+            }
+          ],
           "actions": [
             {
               "type": {
-                "value": "SetStringObjectVariable"
+                "value": "PrimitiveDrawing::LineV2"
               },
               "parameters": [
-                "bulet2",
-                "id",
-                "=",
-                "selectedName"
+                "garis_gerak",
+                "StartX",
+                "StartY",
+                "CursorX()",
+                "CursorY()",
+                "8"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "bulet2",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "bulet2",
+                    "tipe",
+                    "=",
+                    "bullet_target"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "bulet2",
+                    "matched",
+                    "=",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PrimitiveDrawing::Drawer::ClearShapes"
+                  },
+                  "parameters": [
+                    "garis_gerak"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PrimitiveDrawing::LineV2"
+                  },
+                  "parameters": [
+                    "garis_gerak",
+                    "StartX",
+                    "StartY",
+                    "bulet2.CenterX()",
+                    "bulet2.CenterY()",
+                    "8"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "Drag End.wav",
+                        "2",
+                        "",
+                        "60",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
               ]
             },
             {
               "type": {
-                "value": "Quit"
+                "value": "NumberVariable"
               },
               "parameters": [
-                ""
+                "dot_selected",
+                ">",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "bulet2",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "bulet2",
+                    "tipe",
+                    "=",
+                    "bullet_target"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "bulet2",
+                        "id",
+                        "!=",
+                        "dot_selected"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "Incorrect Answer.wav",
+                        "2",
+                        "",
+                        "60",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "bulet2",
+                        "id",
+                        "=",
+                        "dot_selected"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "Correct Answer.wav",
+                        "2",
+                        "",
+                        "60",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PrimitiveDrawing::FillColor"
+                      },
+                      "parameters": [
+                        "garis_buat",
+                        "\"20;255;0\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PrimitiveDrawing::OutlineColor"
+                      },
+                      "parameters": [
+                        "garis_buat",
+                        "\"20;255;0\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PrimitiveDrawing::LineV2"
+                      },
+                      "parameters": [
+                        "garis_buat",
+                        "StartX",
+                        "StartY",
+                        "bulet2.CenterX()",
+                        "bulet2.CenterY()",
+                        "8"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "bulet2",
+                        "matched",
+                        "True",
+                        "selectedName"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AjoutObjConcern"
+                          },
+                          "parameters": [
+                            "",
+                            "bulet2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "NumberObjectVariable"
+                          },
+                          "parameters": [
+                            "bulet2",
+                            "id",
+                            "=",
+                            "dot_selected"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "bulet2",
+                            "matched",
+                            "True",
+                            "selectedName"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "dot_selected",
+                    "=",
+                    "0"
+                  ]
+                }
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AjoutObjConcern"
+              },
+              "parameters": [
+                "",
+                "bulet2"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "bulet2",
+                "matched",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PickedInstancesCount"
+              },
+              "parameters": [
+                "bulet2",
+                ">=",
+                "4"
+              ]
+            }
+          ],
+          "actions": []
         }
       ],
       "layers": [
@@ -17489,7 +17831,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.4633111824513987,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [],
@@ -26484,7 +26827,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.5117784035210173,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [
@@ -28887,7 +29231,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.546875,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [
@@ -31015,7 +31360,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.546875,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [
@@ -34727,7 +35073,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.4633111824513976,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [

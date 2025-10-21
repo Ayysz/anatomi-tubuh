@@ -1,25 +1,23 @@
 [
     
     {
-        "question": "1",
+        "question": "2",
         "answer":"Mata"
     }, 
 
     {
-        "question": "3",
+        "question": "4",
         "answer":"Hidung"
     },
 
     {
-        "question": "2",
+        "question": "3",
         "answer":"Mulut"
     },
 
     {
-        "question": "0",
+        "question": "1",
         "answer":"Kuping"
     }
-    
-    
    
 ]
