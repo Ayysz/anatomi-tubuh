@@ -18,7 +18,7 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "templateSlug": "",
-    "version": "1.0.0",
+    "version": "1.1.1",
     "name": "Jelajahi tubuh manusia",
     "description": "",
     "author": "",
@@ -364,46 +364,6 @@
         "userAdded": false
       },
       {
-        "file": "LOADING.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "LOADING.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "loading2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "loading2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "LOADING.png3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "LOADING.png3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "LOADING.png4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "LOADING.png4.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "LOADING.png5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "LOADING.png5.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "Group 40.png",
         "kind": "image",
         "metadata": "",
@@ -484,82 +444,10 @@
         "userAdded": false
       },
       {
-        "file": "LEVEL  1-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "LEVEL  1-1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "DADADA.png",
         "kind": "image",
         "metadata": "{\"localFilePath\":\"DADADA.png\",\"extension\":\".png\"}",
         "name": "DADADA.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "sffsf.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "sffsf.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "sfsffs.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "sfsffs.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "rgdgr.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "rgdgr.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Group 14.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Group 14.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "n4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "n4.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "n3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "n3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "n2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "n2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "n1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "n1.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -900,14 +788,6 @@
         "userAdded": false
       },
       {
-        "file": "next.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "next.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "mulut1.png",
         "kind": "image",
         "metadata": "",
@@ -1205,14 +1085,6 @@
       },
       {
         "disablePreload": false,
-        "file": "Jelajahi tubuh manusia.json",
-        "kind": "json",
-        "metadata": "",
-        "name": "Jelajahi tubuh manusia.json",
-        "userAdded": false
-      },
-      {
-        "disablePreload": false,
         "file": "json/soal1.json",
         "kind": "json",
         "metadata": "",
@@ -1248,14 +1120,6 @@
         "kind": "image",
         "metadata": "",
         "name": "Group 5.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Group 118.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Group 118.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -1668,14 +1532,6 @@
         "userAdded": false
       },
       {
-        "file": "ususbesar.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ususbesar.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "ususkecil.png",
         "kind": "image",
         "metadata": "",
@@ -1852,26 +1708,10 @@
         "userAdded": false
       },
       {
-        "file": "assets/NewSprite5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite5",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "ssfsf.png",
         "kind": "image",
         "metadata": "",
         "name": "ssfsf.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "pesannext.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pesannext.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -1980,14 +1820,6 @@
         "userAdded": false
       },
       {
-        "file": "tubuhterakhir.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tubuhterakhir.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "4.png",
         "kind": "image",
         "metadata": "",
@@ -2044,42 +1876,10 @@
         "userAdded": false
       },
       {
-        "file": "13.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"13.png\",\"extension\":\".png\"}",
-        "name": "13.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/2.png\"}",
-        "name": "2",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "15.png",
         "kind": "image",
         "metadata": "",
         "name": "15.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "aa.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "aa.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "bb.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "bb.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -2156,39 +1956,11 @@
         "userAdded": false
       },
       {
-        "file": "assets/NewSprite8.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite8",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Warriyo, Zeus X Crona, Panther - Mortals (Hindi)  Trap  NCS - Copyright Free Music.mp3",
-        "kind": "audio",
-        "metadata": "",
-        "name": "Warriyo, Zeus X Crona, Panther - Mortals (Hindi)  Trap  NCS - Copyright Free Music.mp3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/NewSprite10.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite10",
         "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "BGM 1.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "BGM 1.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
         "userAdded": false
       },
       {
@@ -2206,16 +1978,6 @@
         "kind": "audio",
         "metadata": "",
         "name": "Robot.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "Pop Up Open.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "Pop Up Open.wav",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
@@ -2416,30 +2178,10 @@
         "userAdded": false
       },
       {
-        "file": "Drag Start2.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "Drag Start2.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
         "file": "Drag End.wav",
         "kind": "audio",
         "metadata": "",
         "name": "Drag End.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "BGM 2.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "BGM 2.wav",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
@@ -2521,30 +2263,6 @@
         "kind": "image",
         "metadata": "",
         "name": "Group 115.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Rectangle 8.png2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Rectangle 8.png2",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Rectangle 8.png3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Rectangle 8.png3",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Group.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Group.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -8741,7 +8459,7 @@
               "parameters": [
                 "next_scene",
                 "=",
-                "\"game2\""
+                "\"belajar-level2\""
               ]
             },
             {
@@ -9975,7 +9693,7 @@
               "parameters": [
                 "next_scene",
                 "=",
-                "\"game2\""
+                "\"game-drag-n-drop\""
               ]
             },
             {
@@ -33603,11 +33321,13 @@
                     },
                     {
                       "type": {
-                        "value": "ShowLayer"
+                        "value": "SetBooleanObjectVariable"
                       },
                       "parameters": [
-                        "",
-                        "\"robodoc\""
+                        "robodoc",
+                        "show",
+                        "True",
+                        ""
                       ]
                     },
                     {
@@ -33621,13 +33341,20 @@
                     },
                     {
                       "type": {
-                        "value": "SetBooleanObjectVariable"
+                        "value": "RemoveObjectTimer"
                       },
                       "parameters": [
                         "robodoc",
-                        "show",
-                        "True",
-                        ""
+                        "\"salah\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShowLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"robodoc\""
                       ]
                     }
                   ]
