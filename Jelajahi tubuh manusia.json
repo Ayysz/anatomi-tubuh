@@ -34160,58 +34160,93 @@
                         "",
                         "\"robodoc\""
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "CompareObjectTimer"
-                      },
-                      "parameters": [
-                        "robodoc",
-                        "\"salah\"",
-                        ">=",
-                        "0"
-                      ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "teks_robodoc",
-                        "Animation",
-                        "=",
-                        "\"salah\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CompareObjectTimer"
+                          },
+                          "parameters": [
+                            "robodoc",
+                            "\"menang\"",
+                            ">=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ShowLayer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"robodoc\""
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "robodoc",
-                        "Animation",
-                        "=",
-                        "\"loop\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ShowLayer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"robodoc\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ResetObjectTimer"
-                      },
-                      "parameters": [
-                        "robodoc",
-                        "\"salah\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CompareObjectTimer"
+                          },
+                          "parameters": [
+                            "robodoc",
+                            "\"salah\"",
+                            ">=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "robodoc",
+                            "Animation",
+                            "=",
+                            "\"loop\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "teks_robodoc",
+                            "Animation",
+                            "=",
+                            "\"salah\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "robodoc",
+                            "\"salah\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ShowLayer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"robodoc\""
+                          ]
+                        }
                       ]
                     }
                   ]
